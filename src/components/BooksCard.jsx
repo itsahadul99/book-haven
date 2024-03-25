@@ -1,7 +1,8 @@
-import { useLoaderData } from "react-router-dom";
+/* eslint-disable react/prop-types */
+
 import { FaRegStar } from "react-icons/fa";
-const BooksCard = () => {
-    const books = useLoaderData();
+import { Link } from "react-router-dom";
+const BooksCard = ({books}) => {
     return (
         <div className="my-16">
             <h1 className="text-5xl font-bold text-center">Books</h1>
@@ -9,7 +10,7 @@ const BooksCard = () => {
                 {
                     books.map(book => {
                         return (
-                            <div key={book.id}>
+                            <Link to={`/book-details/${book.bookId}`} key={book.bookId}>
                                 <div className=" p-6 flex flex-col shadow-xl space-y-5 border rounded-lg">
                                     <div className="px-5 bg-[#F3F3F3] p-8 flex justify-center rounded-lg h-[300px]">
                                         <img src={book.image} alt="" className="rounded-xl max-w-40" />
@@ -30,7 +31,7 @@ const BooksCard = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })
                 }
