@@ -1,8 +1,11 @@
+import { Outlet } from "react-router-dom";
+import Nav from "../components/Nav";
+
 const MainLayout = () => {
     return (
-        <div>
-            <h1 className="text-4xl">Testing .....</h1>
-            <button className="btn btn-primary">Btn</button>
+        <div className="max-w-7xl mx-auto">
+            <Nav />
+            <Outlet />
         </div>
     );
 };
