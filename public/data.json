@@ -55,7 +55,7 @@
       "bookId": 5,
       "bookName": "The Catcher in the Rye",
       "author": "J.D. Salinger",
-      "image": "https://i.postimg.cc/d3bm5xX2/the-catcher-book.jpg",
+      "image": "https://i.postimg.cc/MKR7YR21/download.jpg",
       "review": "J.D. Salinger's The Catcher in the Rye is a seminal coming-of-age novel that captures the disillusionment and alienation of adolescence. Narrated by the rebellious teenager Holden Caulfield, the novel follows his journey through New York City as he grapples with the phoniness of the adult world. Salinger's portrayal of teenage angst and rebellion struck a chord with readers upon its release and continues to resonate with each new generation. With its raw honesty and authentic voice, The Catcher in the Rye remains a timeless classic of adolescent literature.",
       "totalPages": 224,
       "rating": 4.4,
@@ -76,6 +76,45 @@
       "tags": ["Adventure", "Epic"],
       "publisher": "Allen & Unwin",
       "yearOfPublishing": 1954
+    },
+    {
+      "bookId": 7,
+      "bookName": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "image": "https://i.postimg.cc/7LqnhLR0/Hunger.jpg",
+      "review": "Suzanne Collins' The Hunger Games is a gripping dystopian novel that takes readers on a thrilling journey of survival and rebellion. Set in a post-apocalyptic world where teenagers are forced to compete in a brutal televised competition, the novel follows Katniss Everdeen as she fights for her life and challenges the oppressive regime of the Capitol. Collins' fast-paced narrative and compelling characters make The Hunger Games a riveting read that explores themes of power, sacrifice, and resilience.",
+      "totalPages": 374,
+      "rating": 4.7,
+      "category": "Young Adult",
+      "tags": ["Dystopian", "Action"],
+      "publisher": "Scholastic Press",
+      "yearOfPublishing": 2008
+    },
+    {
+      "bookId": 8,
+      "bookName": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image": "https://i.postimg.cc/qvsGpK1p/Alchemist.webp",
+      "review": "Paulo Coelho's The Alchemist is a philosophical novel that follows the journey of Santiago, a shepherd boy, as he searches for his personal legend. Through encounters with colorful characters and mystical experiences, Santiago learns valuable lessons about following one's dreams and listening to the heart's desires. Coelho's lyrical prose and profound insights into the human spirit have made The Alchemist a beloved modern classic that inspires readers to pursue their own destinies.",
+      "totalPages": 197,
+      "rating": 4.6,
+      "category": "Philosophical Fiction",
+      "tags": ["Quest", "Spirituality"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 1988
+    },
+    {
+      "bookId": 9,
+      "bookName": "The Road",
+      "author": "Cormac McCarthy",
+      "image": "https://i.postimg.cc/g04qZW95/The-root.jpg",
+      "review": "Cormac McCarthy's The Road is a haunting post-apocalyptic novel that explores the depths of human despair and the enduring bond between a father and son. Set in a bleak, ashen landscape devoid of life, the novel follows the duo as they journey southward in search of refuge and hope amidst the chaos and devastation. McCarthy's sparse yet poetic prose creates a sense of dread and desolation, while also highlighting the resilience of the human spirit in the face of adversity. The Road is a profound meditation on love, loss, and the will to survive.",
+      "totalPages": 287,
+      "rating": 4.4,
+      "category": "Post-Apocalyptic",
+      "tags": ["Survival", "Parenting"],
+      "publisher": "Alfred A. Knopf",
+      "yearOfPublishing": 2006
     }
   ]
   
