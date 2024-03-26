@@ -4,7 +4,7 @@ const TopBooks = () => {
     const topBooks = useLoaderData();
 
     return (
-        <div className="space-y-5 lg:space-y-10">
+        <div className="space-y-5 lg:space-y-10 mb-10 lg:mb-20">
             <h1 className="text-2xl lg:text-5xl font-bold text-center ">Top books of the year </h1>
             {
                 topBooks.map((book) => {
@@ -25,7 +25,7 @@ const TopBooks = () => {
                                     <p className="text-xl">Ratings:  {book.rating}</p>
                                     <FaRegStar size={18} />
                                 </div>
-                                <button className="px-8 py-2 mt-3 text-white font-bold text-lg bg-[#23BE0A] hover:bg-[#22be0aac] hover:text-black rounded-lg">Add to  Wishlist</button>
+                                <button className="px-8 py-2 mt-3 text-white font-bold text-lg bg-[#23BE0A] hover:bg-[#22be0aac] hover:text-black rounded-lg">Add to Wishlist</button>
                             </div>
                         </div>
                     )

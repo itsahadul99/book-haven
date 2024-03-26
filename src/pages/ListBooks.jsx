@@ -7,10 +7,7 @@ import ReadBooks from "../components/ReadBooks";
 import WishListBooks from "../components/WishListBooks";
 const ListBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
-    // const [tabIndex, setTabIndex] = useState(0);
-    // const [storedRead, setStoreRead] = useState();
     const readBooksData = JSON.parse(localStorage.getItem('read_book')) || [];
-    // console.log(getFromLS);
     const wishListBookData = JSON.parse(localStorage.getItem('wish_list')) || [];
     return (
         <div>
@@ -27,25 +24,16 @@ const ListBooks = () => {
                     </ul>
                 </div>
             </div>
-            {/* <div className="flex -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
-                <Link to='' onClick={() =>  setTabIndex(0)} className={`text-xl px-5 py-3 ${tabIndex ===0? 'border border-b-0': 'border-b'} dark:border-gray-400 dark:text-gray-400`}>
-                    <span onClick={() => handleReadbook()}>Read Books</span>
-                </Link>
-                <Link to='' onClick={() => setTabIndex(1)} className={` text-xl  px-5 py-3  ${tabIndex ===1? 'border border-b-0': 'border-b'} dark:border-gray-400 dark:text-gray-400`}>
-                    
-                    <span>Wishlist Books</span>
-                </Link>
-            </div> */}
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab>Read Books</Tab>
                     <Tab>Wishlist</Tab>
                 </TabList>
                 <TabPanel>
-                <ReadBooks readBooksData = {readBooksData} /> 
+                    <ReadBooks readBooksData={readBooksData} />
                 </TabPanel>
                 <TabPanel>
-                    <WishListBooks wishListBookData = {wishListBookData}/>
+                    <WishListBooks wishListBookData={wishListBookData} />
                 </TabPanel>
             </Tabs>
         </div>

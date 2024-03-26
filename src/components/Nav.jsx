@@ -17,7 +17,7 @@ const Nav = () => {
             }>Listed Books</NavLink>
         </li>
         <li>
-            <NavLink to='/read-pages' className={({ isActive }) =>
+            <NavLink to='/pages-to-read' className={({ isActive }) =>
                 isActive
                     ? "btn btn-outline btn-success font-bold text-xs lg:text-lg"
                     : "font-bold"
