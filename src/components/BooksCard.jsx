@@ -4,9 +4,9 @@ import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const BooksCard = ({books}) => {
     return (
-        <div className="my-16">
-            <h1 className="text-5xl font-bold text-center">Books</h1>
-            <div className="grid grid-cols-3 gap-6 items-start mt-8">
+        <div className="my-8 lg:my-16">
+            <h1 className=" text-3xl lg:text-5xl font-bold text-center">Books</h1>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mt-4 lg:mt-8">
                 {
                     books.map(book => {
                         return (

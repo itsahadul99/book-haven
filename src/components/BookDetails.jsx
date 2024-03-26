@@ -15,21 +15,21 @@ const BookDetails = () => {
         savedBooksAsWishList(bookId)
     }
     return (
-        <div className="flex gap-12 h-full sm:min-h-[calc(100vh-190px)]">
+        <div className="flex flex-col lg:flex-row gap-12 h-full lg:min-h-[calc(100vh-190px)]">
             <div className="bg-[#1313130D] flex items-center justify-center p-14">
-                <img className="w-full h-full" src={image} />
+                <img className="w-full h-[300px]" src={image} />
             </div>
-            <div className=" text-[#131313] flex-1">
+            <div className=" text-[#131313] flex-1 px-5 lg:px-0">
                 <h1 className="text-4xl font-bold ">{bookName}</h1>
                 <p className="border-b-2 border-dotted font-medium text-lg py-4">By: {author}</p>
                 <p className="border-b-2 border-dotted font-medium text-lg py-4">{category}</p>
                 <p className="pl-0 textarea-md"><span className=" font-bold">Review: </span>{review}</p>
-                <div className="flex gap-7 items-center py-4 border-b-2 border-dotted">
+                <div className="flex gap-2 lg:gap-7 items-center py-4 border-b-2 border-dotted">
                     <p className="font-bold">Tags:</p>
                     <p className="px-3 py-2 text-[#23BE0A] bg-[#23BE0A0D] rounded-full font-medium">#{tags[0]}</p>
                     <p className="px-3 py-2 text-[#23BE0A] bg-[#23BE0A0D] rounded-full font-medium">#{tags[1]}</p>
                 </div>
-                <div className="my-5 w-2/3  flex items-center justify-between ">
+                <div className="my-5 w-full lg:w-2/3  flex items-center justify-between ">
                     <div className="text-[#131313B3]">
                         <p>Number of Pages:</p>
                         <p>Publisher:</p>
