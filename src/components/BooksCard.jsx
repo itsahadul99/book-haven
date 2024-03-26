@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-
+import PropTypes from 'prop-types';
 import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const BooksCard = ({books}) => {
@@ -39,5 +38,7 @@ const BooksCard = ({books}) => {
         </div>
     );
 };
-
+BooksCard.propTypes = {
+    books: PropTypes.object.isRequired,
+}
 export default BooksCard;

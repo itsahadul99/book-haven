@@ -30,6 +30,13 @@ const Nav = () => {
                     : "font-bold"
             }>Top Books</NavLink>
         </li>
+        <li>
+            <NavLink to='/famous-library' className={({ isActive }) =>
+                isActive
+                    ? "btn btn-outline btn-success font-bold text-xs lg:text-lg"
+                    : "font-bold"
+            }>Famous Library</NavLink>
+        </li>
     </>
     return (
         <div className="navbar my-5 lg:my-10">

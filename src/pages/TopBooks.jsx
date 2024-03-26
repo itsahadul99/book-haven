@@ -2,10 +2,9 @@ import { useLoaderData } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 const TopBooks = () => {
     const topBooks = useLoaderData();
-
     return (
         <div className="space-y-5 lg:space-y-10 mb-10 lg:mb-20">
-            <h1 className="text-2xl lg:text-5xl font-bold text-center ">Top books of the year </h1>
+            <h1 className="text-2xl lg:text-5xl font-bold text-center ">Top Books of The Year </h1>
             {
                 topBooks.map((book) => {
                     return (

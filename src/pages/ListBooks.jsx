@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
-// import { Link } from "react-router-dom";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import 'react-tabs/style/react-tabs.css';
 import ReadBooks from "../components/ReadBooks";

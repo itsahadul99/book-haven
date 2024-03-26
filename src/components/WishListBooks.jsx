@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import { FaUsers } from "react-icons/fa6";
 import { MdOutlineContactPage } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
@@ -39,5 +39,7 @@ const WishListBooks = ({ wishListBookData }) => {
         </div>
     );
 };
-
+WishListBooks.propTypes = {
+    wishListBookData: PropTypes.object.isRequired,
+}
 export default WishListBooks;

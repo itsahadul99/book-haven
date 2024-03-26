@@ -2,8 +2,6 @@ import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
-// import { savedDataLS } from "../utils/localStorage";
-
 const BookDetails = () => {
     const books = useLoaderData();
     const { bookId } = useParams();

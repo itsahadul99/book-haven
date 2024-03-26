@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import { FaUsers } from "react-icons/fa6";
 import { MdOutlineContactPage } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
 const ReadBooks = ({ readBooksData }) => {
-    // console.log(readBooksData);
     return (
         <div className="space-y-5 lg:space-y-8 my-5 lg:my-10">
             {
@@ -40,5 +39,7 @@ const ReadBooks = ({ readBooksData }) => {
         </div>
     );
 };
-
+ReadBooks.propTypes = {
+    readBooksData: PropTypes.object.isRequired,
+}
 export default ReadBooks;

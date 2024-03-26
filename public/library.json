@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Library of Congress",
+    "location": "Washington, D.C., United States",
+    "image": "https://i.postimg.cc/DymFBtck/loc.webp",
+    "area": "2.1 million square feet",
+    "stored_books": 39.6 ,
+    "website": "https://www.loc.gov/"
+  },
+  {
+    "name": "British Library",
+    "location": "London, England",
+    "image": "https://i.postimg.cc/43pXpVQY/bl.jpg",
+    "area": "646,000 square feet",
+    "stored_books": 170 ,
+    "website": "https://www.bl.uk/"
+  },
+  {
+    "name": "National Library of France",
+    "location": "Paris, France",
+    "image": "https://i.postimg.cc/SQgkLyCf/bndf.webp",
+    "area": "383,000 square meters",
+    "stored_books": 40 ,
+    "website": "https://www.bnf.fr/"
+  },
+  {
+    "name": "New York Public Library",
+    "location": "New York City, United States",
+    "image": "https://i.postimg.cc/GtgRbQd5/nypl.jpg",
+    "area": "646,680 square feet",
+    "stored_books": 53 ,
+    "website": "https://www.nypl.org/"
+  },
+  {
+    "name": "Library and Archives Canada",
+    "location": "Ottawa, Canada",
+    "image": "https://i.postimg.cc/MTDxFw4x/laac.jpg",
+    "area": "48,000 square meters",
+    "stored_books": 54 ,
+    "website": "https://www.bac-lac.gc.ca/eng/"
+  },
+  {
+    "name": "Russian State Library",
+    "location": "Moscow, Russia",
+    "image": "https://i.postimg.cc/8czD83Qv/rsl.jpg",
+    "area": "416,000 square meters",
+    "stored_books": 47.2,
+    "website": "https://www.rsl.ru/"
+  }
+]

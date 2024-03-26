@@ -1,5 +1,5 @@
 import { Bar, BarChart, CartesianGrid, Cell, Tooltip, XAxis, YAxis } from "recharts";
-
+import PropTypes from 'prop-types';
 const PageToRead = () => {
   const readBooksData = JSON.parse(localStorage.getItem("read_book")) || [];
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
@@ -47,5 +47,12 @@ const PageToRead = () => {
     </div>
   );
 };
+PageToRead.propTypes = {
+    fill: PropTypes.string,
+    x: PropTypes.string,
+    y: PropTypes.string,
+    width: PropTypes.string,
+    height: PropTypes.string,
 
+}
 export default PageToRead;
