@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { savedBooksAsRead, savedBooksAsWishList } from "../utils/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -7,6 +8,12 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === parseInt(bookId));
     // console.log(book);
     const { bookName, image, review, category, tags, totalPages, publisher, rating, yearOfPublishing, author } = book;
+    const handleReadBook = (bookId) => {
+        savedBooksAsRead(bookId)
+    }
+    const handleWishList = (bookId) => {
+        savedBooksAsWishList(bookId)
+    }
     return (
         <div className="flex gap-12 h-full sm:min-h-[calc(100vh-190px)]">
             <div className="bg-[#1313130D] flex items-center justify-center p-14">
@@ -37,8 +44,8 @@ const BookDetails = () => {
                     </div>
                 </div>
                 <div>
-                    <button className="border-2 mr-7 px-6 py-4 text-[#131313] font-bold text-lg hover:bg-green-200 rounded-lg">Read</button>
-                    <button className="px-6 py-4 text-white font-bold text-lg bg-[#50B1C9] hover:bg-[#50b1c982] hover:text-black rounded-lg">Wishlist</button>
+                    <button onClick={() => handleReadBook(bookId)} className="border-2 mr-7 px-6 py-4 text-[#131313] font-bold text-lg hover:bg-green-200 rounded-lg">Read</button>
+                    <button onClick={() => handleWishList(bookId)} className="px-6 py-4 text-white font-bold text-lg bg-[#50B1C9] hover:bg-[#50b1c982] hover:text-black rounded-lg">Wishlist</button>
                 </div>
             </div>
         </div>

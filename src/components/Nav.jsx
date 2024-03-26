@@ -2,9 +2,21 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to ='/list-books'>Listed Books</NavLink></li>
-        <li><NavLink to = '/read-pages'>Pages to Read</NavLink></li>
+        <li><NavLink to='/' className={({ isActive }) =>
+            isActive
+                ? "btn btn-outline btn-success font-bold text-lg"
+                : "font-bold"
+        }>Home</NavLink></li>
+        <li><NavLink to='/list-books' className={({ isActive }) =>
+            isActive
+                ? "btn btn-outline btn-success font-bold text-lg"
+                : "font-bold"
+        }>Listed Books</NavLink></li>
+        <li><NavLink to='/read-pages' className={({ isActive }) =>
+            isActive
+                ? "btn btn-outline btn-success font-bold text-lg"
+                : "font-bold"
+        }>Pages to Read</NavLink></li>
     </>
     return (
         <div className="flex justify-between items-center max-w-7xl mx-auto my-10">
@@ -12,7 +24,7 @@ const Nav = () => {
                 <button className="text-3xl text-[#131313] font-bold">Book Haven</button>
             </div>
             <div className="">
-                <ul className="flex gap-5 items-center font-semibold text-lg">
+                <ul className="flex gap-5 items-center">
                     {links}
                 </ul>
             </div>
