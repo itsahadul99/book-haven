@@ -3,11 +3,12 @@ import { FaUsers } from "react-icons/fa6";
 import { MdOutlineContactPage } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
-const ReadBooks = ({ readBooksData }) => {
+const ReadBooks = ({ handleSortReadItem }) => {
     return (
         <div className="space-y-5 lg:space-y-8 my-5 lg:my-10">
             {
-                readBooksData.map((book) => {
+                handleSortReadItem().map((book) => {
+                    // display.map((book) =>{
                     return (
                         <div key={book.bookId} className="flex flex-col items-start gap-5 lg:gap-10 lg:flex-row border rounded-xl p-5 h-fit shadow-md">
                             <div className="px-5 lg:px-10 py-3 lg:py-10 bg-[#F3F3F3]">
@@ -40,6 +41,6 @@ const ReadBooks = ({ readBooksData }) => {
     );
 };
 ReadBooks.propTypes = {
-    readBooksData: PropTypes.object.isRequired,
+    handleSortReadItem: PropTypes.object.isRequired,
 }
 export default ReadBooks;

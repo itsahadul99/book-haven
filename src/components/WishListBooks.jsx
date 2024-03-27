@@ -3,11 +3,11 @@ import { FaUsers } from "react-icons/fa6";
 import { MdOutlineContactPage } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
-const WishListBooks = ({ wishListBookData }) => {
+const WishListBooks = ({ handleSortedWishList }) => {
     return (
         <div className="space-y-5 lg:space-y-8 my-5 lg:my-10">
             {
-                wishListBookData.map((book) => {
+                handleSortedWishList().map((book) => {
                     return (
                         <div key={book.bookId} className="flex flex-col items-start gap-5 lg:gap-10 lg:flex-row border rounded-xl p-5 h-fit shadow-md">
                             <div className="px-5 lg:px-10 py-3 lg:py-10 bg-[#F3F3F3]">
@@ -40,6 +40,6 @@ const WishListBooks = ({ wishListBookData }) => {
     );
 };
 WishListBooks.propTypes = {
-    wishListBookData: PropTypes.object.isRequired,
+    handleSortedWishList: PropTypes.object.isRequired,
 }
 export default WishListBooks;
